@@ -267,6 +267,7 @@
 
 .Footer__social--email h4 {
   color: var(--color-zero);
+  font-weight: 300;
   font-size: 15px;
   margin: 5px;
 }
@@ -277,6 +278,7 @@
 }
 
 .Footer__social--telefone h4 {
+  font-weight: 300;
   color: var(--color-zero);
   margin: 5px;
 }
