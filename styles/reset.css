@@ -5,12 +5,13 @@
 
 * {
   font-family: 'Roboto', sans-serif;
-  text-decoration: none;
+	text-decoration: none;
+	border: none;
 }
 
 html,body {
   height: 100%;
-  background: rgb(241, 241, 241);
+  background: rgb(252, 255, 250);
 }
 
 

@@ -14,22 +14,66 @@
 <body>
   <header class="Header">
     <navbar class="Header__navbar">
-      <h1 class="Header__navbar--logo">Orapma</h1>
+      <img class="Header__navbar--logo" src="styles/assets/logoText.svg" alt="logo">
       <ul class="Header__navbar--menu">
-        <a href="#"><li>Melhor para você</li></a>
+        <a href="#melhorparavoce"><li>Melhor para você</li></a>
         <a href="#"><li>Planos</li></a>
       </ul>
     </navbar>
-    <div class="Header__form">
-      <p class="Header__form--text">
+    <div class="Header__banner">
+      <p class="Header__banner--text">
           A Orapma, se preocupa com a transparência junto aos seus clientes, por isso disponabilizamos essa 
           página onde você pode escolher os códigos das cidades de origem e destino, o tempo da ligação em
           minutos e escolher qual o plano FaleMais.
       </p>
-      <a class="Header__form--button" href="#">Calcule agora</a>
+      <a class="Header__banner--button" href="#">Calcule agora</a>
   </header>
   <main class="Main">
-    
+    <h2 class="Main--text" id="melhorparavoce">Melhor para voce</h2>
+    <div class="Main__form">
+      <div class="Main__form--origem">
+        <label for="origem">Origem</label>
+        <select name="origem" id="origem" > <!-- Origem -->
+          <option value=""></option>
+          <option value="011">011</option>
+          <option value="018">018</option>
+        </select>
+      </div>
+      <div class="Main__form--destino">
+        <label for="destino">Destino</label>
+        <select name="destino" id="destino"> <!-- Destino -->
+          <option value=""></option>
+          <option value="011">011</option>
+          <option value="016">016</option>
+          <option value="017">017</option>
+        </select>
+      </div>
+      <div class="Main__form--tempo">
+        <label for="tempo">Tempo</label>
+        <input type="number" id="tempo" placeholder="Tempo em minutos"> <!-- tempo -->
+      </div>
+      <div class="Main__form--plano">
+        <label for="plano">Plano</label>
+        <select name="plano" id="plano"> <!-- Plano -->
+          <option value=""></option>
+          <option value="falemais30">Fale mais 30</option>
+          <option value="falemais60">Fale mais 60</option>
+          <option value="falemais120">Fale mais 120</option>
+        </select>
+      </div>
+      <div class="Main__form--button">
+        <label for="">&nbsp</label>
+        <input type="button" id="button" value="Calcular">
+      </div>
+      <div class="Main__form--result">  
+        <label for="">Com fale mais</label>
+        <input type="text" id="resultOn" readonly> <!-- resultado com fale mais -->
+      </div>
+      <div class="Main__form--result">
+        <label for="">Sem fale mais</label>
+        <input type="text" id="resultOff" readonly> <!-- resultado sem fale mais -->
+      </div>
+    </div>
   </main>
   <script src="scripts/index.js"></script>
 </body>
