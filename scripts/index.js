@@ -17,13 +17,13 @@ function comFaleMais() {
     return 'valores invalidos'
   }
   else if (getValue('plano') === 'falemais30' && getValue('tempo') > 30) {
-    return `R$ ${((getValue('tempo') - 30) * excendentes(getValue('origem'), getValue('destino'))).toFixed(2).replace('.', ',')}`
+    return `R$ ${((getValue('tempo') - 30) * excendentes(getValue('origem'), getValue('destino')) * 1.1).toFixed(2).replace('.', ',')}`
   } 
   else if (getValue('plano') === 'falemais60' && getValue('tempo') > 60) {
-    return `R$ ${((getValue('tempo') - 60) * excendentes(getValue('origem'), getValue('destino'))).toFixed(2).replace('.', ',')}`
+    return `R$ ${((getValue('tempo') - 60) * excendentes(getValue('origem'), getValue('destino')) * 1.1).toFixed(2).replace('.', ',')}`
   } 
   else if (getValue('plano') === 'falemais120' && getValue('tempo') > 120) {
-    return `R$ ${((getValue('tempo') - 120) * excendentes(getValue('origem'), getValue('destino'))).toFixed(2).replace('.', ',')}`
+    return `R$ ${((getValue('tempo') - 120) * excendentes(getValue('origem'), getValue('destino')) * 1.1).toFixed(2).replace('.', ',')}`
   }
   return `R$ 0,00`
 }

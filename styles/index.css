@@ -97,14 +97,20 @@
 /* Main */
 
 .Main {
-  background: var(--color-zero);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('./assets/background.svg') 50% 50%;
+  background-color: var(--color-zero);
 }
 
 .Main--text {
+  align-self: flex-start;
   color: var(--color-negative);
   margin: 20px;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .Main--text::after {
@@ -179,3 +185,52 @@
   width: 145px;
 }
 
+.Main__planos--card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  max-width: 300px;
+  width: 90vw;
+  background:	linear-gradient(top,  #fff 0%, #d0ffebd8 100%);
+	background: -webkit-linear-gradient(top,  #fff 0%, #d0ffebd8 100%);
+  border-radius: 20px;
+  box-shadow: 0 0 20px gray;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.Main__planos--card--title {
+  font-weight: bold;
+  color: var(--color-negative);
+  font-size: 20px;
+}
+
+.Main__planos--card--text {
+  color: var(--color-negative);
+  margin: 20px;
+}
+
+.Main__planos--card--text span {
+  font-weight: bold;
+}
+
+.Main__planos--card--price {
+  font-size: 18px;
+  color: var(--color-negative);
+  font-weight: bold;
+}
+
+.Main__planos--card--price span {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.Main__planos--card--button {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: var(--color-zero);
+  background: var(--color-primary);
+}

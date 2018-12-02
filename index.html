@@ -17,7 +17,7 @@
       <img class="Header__navbar--logo" src="styles/assets/logoText.svg" alt="logo">
       <ul class="Header__navbar--menu">
         <a href="#melhorparavoce"><li>Melhor para você</li></a>
-        <a href="#"><li>Planos</li></a>
+        <a href="#planos"><li>Planos</li></a>
       </ul>
     </navbar>
     <div class="Header__banner">
@@ -30,12 +30,14 @@
   </header>
   <main class="Main">
     <h2 class="Main--text" id="melhorparavoce">Melhor para voce</h2>
-    <div class="Main__form">
+    <section class="Main__form">
       <div class="Main__form--origem">
         <label for="origem">Origem</label>
         <select name="origem" id="origem" > <!-- Origem -->
           <option value=""></option>
           <option value="011">011</option>
+          <option value="016">016</option>
+          <option value="017">017</option>
           <option value="018">018</option>
         </select>
       </div>
@@ -46,6 +48,7 @@
           <option value="011">011</option>
           <option value="016">016</option>
           <option value="017">017</option>
+          <option value="018">018</option>
         </select>
       </div>
       <div class="Main__form--tempo">
@@ -73,8 +76,35 @@
         <label for="">Sem fale mais</label>
         <input type="text" id="resultOff" readonly> <!-- resultado sem fale mais -->
       </div>
-    </div>
+    </section>
+    <h2 class="Main--text" id="planos">Planos</h2>
+    <section class="Main__planos">
+      <div class="Main__planos--card">
+        <h3 class="Main__planos--card--title">Fale mais 30</h3>
+        <p class="Main__planos--card--text">Com o plano <span>FaleMais30</span>, o cliente adquire um plano e pode falar de graça até um
+          <span>30 minutos</span> e só paga os minutos excedentes.</p>
+        <p class="Main__planos--card--price"><span>por </span>R$ 29,99 <span>/m</span></p>
+        <button class="Main__planos--card--button">Assine agora</button>
+      </div>
+      <div class="Main__planos--card">
+        <h3 class="Main__planos--card--title">Fale mais 60</h3>
+        <p class="Main__planos--card--text">Com o plano <span>FaleMais60</span>, o cliente adquire um plano e pode falar de graça até um
+          <span>60 minutos</span> e só paga os minutos excedentes.</p>
+        <p class="Main__planos--card--price"><span>por </span>R$ 56,99 <span>/m</span></p>
+        <button class="Main__planos--card--button">Assine agora</button>
+      </div>
+      <div class="Main__planos--card">
+        <h3 class="Main__planos--card--title">Fale mais 120</h3>
+        <p class="Main__planos--card--text">Com o plano <span>FaleMais120</span>, o cliente adquire um plano e pode falar de graça até um
+          <span>120 minutos</span> e só paga os minutos excedentes.</p>
+        <p class="Main__planos--card--price"><span>por </span>R$ 109,99 <span>/m</span></p>
+        <button class="Main__planos--card--button">Assine agora</button>
+      </div>
+    </section>
   </main>
+  <footer class="Footer">
+    
+  </footer>
   <script src="scripts/index.js"></script>
 </body>
 </html>
