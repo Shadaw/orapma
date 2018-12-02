@@ -153,6 +153,11 @@
 .Main__form--origem select{
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  background: #F1F2F2;
+}
+
+.Main__form--destino select {
+  background: #F1F2F2;
 }
 
 .Main__form--tempo input {
@@ -163,6 +168,7 @@
 .Main__form--plano select{
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  background: #F1F2F2;
 }
 
 .Main__form--button input {
@@ -193,8 +199,8 @@
   height: 400px;
   max-width: 300px;
   width: 90vw;
-  background:	linear-gradient(top,  #fff 0%, #d0ffebd8 100%);
-	background: -webkit-linear-gradient(top,  #fff 0%, #d0ffebd8 100%);
+  background:	linear-gradient(top,  #fff 0%, #d0ffeb80 100%);
+	background: -webkit-linear-gradient(top,  #fff 0%, #d0ffeb80 100%);
   border-radius: 20px;
   box-shadow: 0 0 20px gray;
   margin-bottom: 20px;
@@ -204,7 +210,7 @@
 .Main__planos--card--title {
   font-weight: bold;
   color: var(--color-negative);
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .Main__planos--card--text {
@@ -233,4 +239,58 @@
   border-radius: 20px;
   color: var(--color-zero);
   background: var(--color-primary);
+}
+
+/* Footer */
+
+.Footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background: var(--color-third);
+}
+
+.Footer__logo {
+  padding: 10px;
+  width: 100px;
+}
+
+.Footer__social--email,
+.Footer__social--telefone {
+  display: flex;
+}
+
+.Footer__social--email i {
+  color: var(--color-zero);
+  margin: 5px;
+}
+
+.Footer__social--email h4 {
+  color: var(--color-zero);
+  font-size: 15px;
+  margin: 5px;
+}
+
+.Footer__social--telefone i {
+  color: var(--color-zero);
+  margin: 5px;
+}
+
+.Footer__social--telefone h4 {
+  color: var(--color-zero);
+  margin: 5px;
+}
+
+.Footer__hearth {
+  color: var(--color-zero);
+  font-weight: 300;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: var(--color-third-light);
+}
+
+.Footer__hearth i {
+  margin: 0 2px;
+  color: rgb(235, 86, 86);
 }

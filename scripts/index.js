@@ -1,5 +1,20 @@
-let button = document.getElementById('button')
+// scroll suave
+let menuItems = document.querySelectorAll('a[href^="#"]')
 
+menuItems.forEach(function(item) {
+  item.addEventListener('click', function(ev){
+    ev.preventDefault()
+    let element = ev.target.getAttribute('href')
+    let section = document.querySelector(element).offsetTop - 100
+    window.scroll({
+      top: section,
+      behavior: "smooth"
+    })
+  })
+})
+
+// Logica
+let button = document.getElementById('button')
 
 button.addEventListener('click', function(){
   document.getElementById('resultOff').value = semFaleMais()
