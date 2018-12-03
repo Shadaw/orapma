@@ -1,0 +1,23 @@
+{
+  "name": "orapma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shadaw/orapma.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shadaw/orapma/issues"
+  },
+  "homepage": "https://github.com/Shadaw/orapma#readme",
+  "dependencies": {
+    "http-serve": "^1.0.1"
+  }
+}

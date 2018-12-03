@@ -266,10 +266,6 @@
   width: 100px;
 }
 
-.Footer__social {
-  padding-bottom: 20px;
-}
-
 .Footer__social--email,
 .Footer__social--telefone {
   display: flex;
@@ -305,6 +301,7 @@
   text-align: center;
   width: 100%;
   background: var(--color-third-light);
+  margin-top: 20px;
 }
 
 .Footer__hearth i {
@@ -325,11 +322,6 @@
 
   .Main__form--result input {
     width: 322px;
-  }
-
-  /* Footer */
-  .Footer__social {
-    padding-bottom: 0;
   }
 }
 
