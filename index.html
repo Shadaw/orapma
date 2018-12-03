@@ -31,42 +31,46 @@
   <main class="Main">
     <h2 class="Main--text" id="melhorparavoce">Melhor para voce</h2>
     <section class="Main__form">
-      <div class="Main__form--origem">
-        <label for="origem">Origem</label>
-        <select name="origem" id="origem" > <!-- Origem -->
-          <option value=""></option>
-          <option value="011">011</option>
-          <option value="016">016</option>
-          <option value="017">017</option>
-          <option value="018">018</option>
-        </select>
+      <div style="display:flex;">
+        <div class="Main__form--origem">
+          <label for="origem">Origem</label>
+          <select name="origem" id="origem" > <!-- Origem -->
+            <option value=""></option>
+            <option value="011">011</option>
+            <option value="016">016</option>
+            <option value="017">017</option>
+            <option value="018">018</option>
+          </select>
+        </div>
+        <div class="Main__form--destino">
+          <label for="destino">Destino</label>
+          <select name="destino" id="destino"> <!-- Destino -->
+            <option value=""></option>
+            <option value="011">011</option>
+            <option value="016">016</option>
+            <option value="017">017</option>
+            <option value="018">018</option>
+          </select>
+        </div >
+        <div class="Main__form--tempo">
+          <label for="tempo">Tempo</label>
+          <input type="number" id="tempo" placeholder="Tempo em minutos"> <!-- tempo -->
+        </div>
       </div>
-      <div class="Main__form--destino">
-        <label for="destino">Destino</label>
-        <select name="destino" id="destino"> <!-- Destino -->
-          <option value=""></option>
-          <option value="011">011</option>
-          <option value="016">016</option>
-          <option value="017">017</option>
-          <option value="018">018</option>
-        </select>
-      </div>
-      <div class="Main__form--tempo">
-        <label for="tempo">Tempo</label>
-        <input type="number" id="tempo" placeholder="Tempo em minutos"> <!-- tempo -->
-      </div>
-      <div class="Main__form--plano">
-        <label for="plano">Plano</label>
-        <select name="plano" id="plano"> <!-- Plano -->
-          <option value=""></option>
-          <option value="falemais30">Fale mais 30</option>
-          <option value="falemais60">Fale mais 60</option>
-          <option value="falemais120">Fale mais 120</option>
-        </select>
-      </div>
-      <div class="Main__form--button">
-        <label for="">&nbsp</label>
-        <input type="button" id="button" value="Calcular">
+      <div style="display:flex;">
+        <div class="Main__form--plano">
+          <label for="plano">Plano</label>
+          <select name="plano" id="plano"> <!-- Plano -->
+            <option value=""></option>
+            <option value="falemais30">Fale mais 30</option>
+            <option value="falemais60">Fale mais 60</option>
+            <option value="falemais120">Fale mais 120</option>
+          </select>
+        </div>
+        <div class="Main__form--button">
+          <label for="">&nbsp</label>
+          <input type="button" id="button" value="Calcular">
+        </div>
       </div>
       <div class="Main__form--result">  
         <label for="">Com fale mais</label>

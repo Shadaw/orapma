@@ -13,7 +13,7 @@
 
 
 .Header__navbar {
-  width: 85px;
+  height: 85px;
   display: flex;
   width: 100%;
   position: fixed;
@@ -24,14 +24,6 @@
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
-
-/* .Header__navbar--logo {
-  color: var(--color-negative);
-  font-size: 24px;
-  margin-top: 20px;
-  text-transform: uppercase;
-  font-weight: bold;
-} */
 
 .Header__navbar--logo {
   padding-top: 5px;
@@ -125,6 +117,8 @@
   margin: 0 20px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .Main__form label {
@@ -191,6 +185,13 @@
   width: 145px;
 }
 
+.Main__planos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .Main__planos--card {
   display: flex;
   flex-direction: column;
@@ -203,8 +204,10 @@
 	background: -webkit-linear-gradient(top,  #fff 0%, #d0ffeb80 100%);
   border-radius: 20px;
   box-shadow: 0 0 20px gray;
-  margin-bottom: 20px;
+  margin: 20px 15px;
   text-align: center;
+  z-index: 1;
+  transition: all 350ms;
 }
 
 .Main__planos--card--title {
@@ -239,6 +242,12 @@
   border-radius: 20px;
   color: var(--color-zero);
   background: var(--color-primary);
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.Main__planos--card--button:hover {
+  background: var(--color-second);
 }
 
 /* Footer */
@@ -246,13 +255,18 @@
 .Footer {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   background: var(--color-third);
 }
 
 .Footer__logo {
-  padding: 10px;
+  padding: 30px;
   width: 100px;
+}
+
+.Footer__social {
+  padding-bottom: 20px;
 }
 
 .Footer__social--email,
@@ -295,4 +309,170 @@
 .Footer__hearth i {
   margin: 0 2px;
   color: rgb(235, 86, 86);
+}
+
+/* Mobile Medium */
+@media (min-width: 375px) {
+  /* Main */
+  .Main__form--tempo input {
+    width: 204px;
+  }
+
+  .Main__form--button input {
+    width: 217px;
+  }
+
+  .Main__form--result input {
+    width: 322px;
+  }
+
+  /* Footer */
+  .Footer__social {
+    padding-bottom: 0;
+  }
+}
+
+/* Mobile large */
+@media (min-width: 425px) {
+  /* Main */
+  .Main__form--tempo input {
+    width: 254px;
+  }
+
+  .Main__form--button input {
+    width: 267px;
+  }
+
+  .Main__form--result input {
+    width: 372px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  /* Header */
+  .Header__banner--text {
+    font-size: 20px;
+    padding: 30px 80px;
+    line-height: 25px;
+  }
+
+  .Header__banner--button {
+    font-size: 22px;
+  }
+
+  /* Main */
+  
+  .Main--text {
+    margin: 20px 60px;
+  }
+
+  .Main__form--tempo input {
+    width: 200px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .Main__form--plano select {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .Main__form--button input {
+    width: 200px;
+  }
+
+  .Main__form--result input {
+    width: 633px;
+  }
+}
+
+/* laptop */
+@media (min-width: 1024px) {
+  /* Header */
+  .Header__navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .Header__navbar--logo {
+    width: 220px;
+    margin-bottom: 14px;
+  }
+
+  .Header__navbar--menu li {
+    margin-top: 15px;
+  }
+
+  .Header__navbar--menu a {
+    font-size: 20px;
+  }
+
+  .Header__banner--text {
+    font-size: 24px;
+    padding: 30px 110px;
+  }
+
+  /* Main */
+  .Main--text {
+    font-size: 28px;
+  }
+
+  .Main__planos {
+    flex-direction: row;
+  }
+
+  .Main__planos--card {
+    margin-bottom: 40px;
+  }
+
+  .Main__planos--card:hover {
+    transform: scale(1.1);
+  }
+
+  .Main__form {
+    margin: 0 80px;
+  }
+}
+
+/* laptop large */
+
+@media (min-width: 1440px) {
+  /* Header */
+  .Header__banner--text {
+    padding: 30px 260px;
+    line-height: 40px;
+  }
+
+  /* Main */
+  .Main--text {
+    margin: 30px 240px;
+  }
+
+  .Main__form {
+    margin: 0 195px;
+  }
+
+  .Main__form--origem select,
+  .Main__form--destino select {
+    width: 80px;
+    height: 40px;
+  }
+
+  .Main__form--tempo input {
+    height: 26px;
+  }
+
+  .Main__form--plano select {
+    height: 40px;
+  }
+
+  .Main__form--button input {
+    height: 40px;
+  }
+
+  .Main__form--result input {
+    height: 26px;
+  }
 }
